@@ -116,7 +116,7 @@ main > section {
     max-width: 537px;
 }
 
-.feature-title {
+.section-title {
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -124,6 +124,40 @@ main > section {
 #quick-list {
     font-weight: 500;
 }
+
+/* Some Facts Related Style */
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card {
+    border: 2px solid #FF900E;
+    width: 230px;
+    height: 220px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.fact-description {
+    max-width: 540px;
+}
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
@@ -144,6 +178,7 @@ main > section {
 
 
 /* Medium Size Device */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .teams {
         flex-direction: column;
