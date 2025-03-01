@@ -125,6 +125,55 @@ main > section {
     font-weight: 500;
 }
 
+/* Features Section Related Styles */
+
+.features{
+    gap: 100px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.featured-architect img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 /* Some Facts Related Style */
 
 .facts-container {
@@ -158,6 +207,10 @@ main > section {
     max-width: 540px;
 }
 
+.features{
+    gap: 120px;
+}
+
 
 /* Sponsors Related Style */
 
@@ -176,11 +229,30 @@ main > section {
     filter: grayscale(100%);
 }
 
+/* Footer Style */
+
+.footer{
+    width: 1080px;
+    margin: 0 auto;
+}
+.footer-page {
+    height: 75px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.all-rights {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
     .navbar, 
-    .nav-links, 
+    .nav-links,
+    .features, 
     .teams {
         flex-direction: column;
     }  
@@ -204,13 +276,18 @@ main > section {
     .our-features{
         margin-left: 20px;
     }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 
 /* Medium Size Device */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams {
+    .teams, .features {
         flex-direction: column;
     }
 
@@ -222,5 +299,10 @@ main > section {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
